@@ -4,7 +4,7 @@
  print(summary(out))
  a = coef(out)[1]; b = coef(out)[2]; c =coef(out)[3]
  Vmax = 1/a
- K1 = 1/b
- K2 = c
+ K1 = a/b
+ K2 = c/a
  cat("Vmax =", Vmax, ", K1 =", K1, ", K2 =", K2, "\n");
  cat('PH =', log10(K1*K2)/2*(-1), "\n")
